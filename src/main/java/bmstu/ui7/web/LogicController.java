@@ -7,7 +7,10 @@ import io.swagger.annotations.ApiOperation;
 import io.swagger.annotations.ApiResponse;
 import io.swagger.annotations.ApiResponses;
 import io.swagger.annotations.Authorization;
+import iu7.service.Larsen;
 import iu7.service.Mamdani;
+import iu7.service.Sudgeno;
+import iu7.service.Tsukamoto;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
@@ -21,6 +24,17 @@ public class LogicController {
 
     @Autowired
     private Mamdani mamdani;
+
+    @Autowired
+    private Tsukamoto tsukamoto;
+
+    @Autowired
+    private Larsen larsen;
+
+    @Autowired
+    private Sudgeno sudgeno;
+
+
 
     @ApiOperation(value = "Считывание лингвистических переменных", tags = "readV", authorizations = @Authorization("basic"))
     @ApiResponses({
@@ -62,7 +76,12 @@ public class LogicController {
         double value = 0;
         if (method_id == 0)
             value = mamdani.calculate(h,d,"m");
-        // тут задел
+        if (method_id == 1)
+            value = tsukamoto.calculate(h,d,"m");
+        if (method_id == 2)
+            value = larsen.calculate(h,d,"m");
+        if (method_id == 3)
+            value = sudgeno.calculate(h,d,"m");
         return value;
     }
 }

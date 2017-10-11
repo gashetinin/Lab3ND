@@ -6,6 +6,10 @@ class Function {
     def b
     def c
     def d
+    def ka
+    def kb
+    def k0
+    def b0
     def comment
 
     Function(def json_data) {
@@ -14,6 +18,10 @@ class Function {
         this.b = json_data.b
         this.c = json_data.c
         this.d = json_data.d
+        this.ka = json_data.ka
+        this.kb = json_data.kb
+        this.k0 = json_data.k0
+        this.b0 = json_data.b0
         this.comment = json_data.comment
     }
 
@@ -81,15 +89,18 @@ class Function {
         return y > max ? max : y
     }
 
-    @Override
-    public String toString() {
-        return "Function{" +
-                "id=" + id +
-                ", a=" + a +
-                ", b=" + b +
-                ", c=" + c +
-                ", d=" + d +
-                ", comment=" + comment +
-                '}';
+    double calculateValueForLarsen(double x, double k) {
+        def y = calculateValue(x)*k
+        return y
     }
+
+
+    double calculateLine(double x, double y) {
+        return ka*x + kb*y
+    }
+
+    double getXForY(double y) {
+        return (double)(y-b0)/k0
+    }
+
 }

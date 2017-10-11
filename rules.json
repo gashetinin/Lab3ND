@@ -1,0 +1,175 @@
+{
+	"rules" : [
+		{
+			"id": 0,
+			"precondition": [
+				{
+					"var": "h",
+					"func": 10
+				},
+				{
+					"var": "d",
+					"func": 20
+				}
+
+			],
+			"consequence":
+				{
+					"var": "m",
+					"func": 30
+				},
+		},
+		{
+			"id": 1,
+			"precondition": [
+				{
+					"var": "h",
+					"func": 10
+				},
+				{
+					"var": "d",
+					"func": 21
+				}
+
+			],
+			"consequence":
+				{
+					"var": "m",
+					"func": 30
+				},
+		},
+		{
+			"id": 2,
+			"precondition": [
+				{
+					"var": "h",
+					"func": 10
+				},
+				{
+					"var": "d",
+					"func": 22
+				}
+
+			],
+			"consequence":
+				{
+					"var": "m",
+					"func": 31
+				},
+		},
+		{
+			"id": 3,
+			"precondition": [
+				{
+					"var": "h",
+					"func": 11
+				},
+				{
+					"var": "d",
+					"func": 20
+				}
+
+			],
+			"consequence":
+				{
+					"var": "m",
+					"func": 31
+				},
+		},
+		{
+			"id": 4,
+			"precondition": [
+				{
+					"var": "h",
+					"func": 11
+				},
+				{
+					"var": "d",
+					"func": 21
+				}
+
+			],
+			"consequence":
+				{
+					"var": "m",
+					"func": 31
+				},
+		},
+		{
+			"id": 5,
+			"precondition": [
+				{
+					"var": "h",
+					"func": 11
+				},
+				{
+					"var": "d",
+					"func": 22
+				}
+
+			],
+			"consequence":
+				{
+					"var": "m",
+					"func": 32
+				},
+		},
+		{
+			"id": 6,
+			"precondition": [
+				{
+					"var": "h",
+					"func": 12
+				},
+				{
+					"var": "d",
+					"func": 20
+				}
+
+			],
+			"consequence":
+				{
+					"var": "m",
+					"func": 31
+				},
+		},
+		{
+			"id": 7,
+			"precondition": [
+				{
+					"var": "h",
+					"func": 12
+				},
+				{
+					"var": "d",
+					"func": 21
+				}
+
+			],
+			"consequence":
+				{
+					"var": "m",
+					"func": 32
+				},
+		},
+		{
+			"id": 8,
+			"precondition": [
+				{
+					"var": "h",
+					"func": 12
+				},
+				{
+					"var": "d",
+					"func": 22
+				}
+
+			],
+			"consequence":
+				{
+					"var": "m",
+					"func": 32
+				}
+		}
+	]
+}

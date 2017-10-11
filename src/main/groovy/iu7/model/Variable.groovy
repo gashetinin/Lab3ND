@@ -1,6 +1,5 @@
 package iu7.model
 
-
 class Variable {
     def name
     def sname
