@@ -1,0 +1,9 @@
+spring:
+  application:
+    name: Lab3ND
+  messages:
+    basename: messages/messages
+
+server:
+  port: 8083
+  context-path: /
